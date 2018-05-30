@@ -1,0 +1,6 @@
+templates: /usr/share/openstack-tripleo-heat-templates/
+environments:
+- environments/network-isolation.yaml
+- environments/net-single-nic-with-vlans.yaml
+- environments/network-environment.yaml
+- environments/scheduler-hints.yaml
