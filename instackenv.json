@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:controller-0,profile:control,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:4b:68:8e"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-cc01p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6230", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:controller-1,profile:control,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:11:c9:b5"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-cc02p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6231", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:controller-2,profile:control,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:8b:16:c6"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-cc03p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6232", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:networker-0,profile:networker,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:7d:53:46"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-nn01p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6233", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:networker-1,profile:networker,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:03:32:ef"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-nn02p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6234", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:networker-2,profile:networker,boot_option:local", 
+      "cpu": "12", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:5d:89:7e"
+      ], 
+      "memory": "98304", 
+      "name": "esjc-ost2-nn03p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6235", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:compute-0,profile:compute,boot_option:local", 
+      "cpu": "24", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:b3:06:0d"
+      ], 
+      "memory": "262144", 
+      "name": "esjc-ost2-cn01p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6236", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:compute-1,profile:compute,boot_option:local", 
+      "cpu": "24", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:e9:b7:5e"
+      ], 
+      "memory": "262144", 
+      "name": "esjc-ost2-cn02p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6237", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }, 
+    {
+      "arch": "x86_64", 
+      "capabilities": "node:compute-2,profile:compute,boot_option:local", 
+      "cpu": "24", 
+      "disk": "1024", 
+      "mac": [
+        "52:54:00:88:9a:22"
+      ], 
+      "memory": "262144", 
+      "name": "esjc-ost2-cn03p", 
+      "pm_addr": "127.0.0.1", 
+      "pm_password": "password", 
+      "pm_port": "6238", 
+      "pm_type": "pxe_ipmitool", 
+      "pm_user": "admin"
+    }
+  ]
+}
