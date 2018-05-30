@@ -29,6 +29,19 @@ parameter_defaults:
     neutron::dns_domain: 'openstack.dsn.inet.'
     nova::network::neutron::dhcp_domain: 'openstack.dsn.inet.'
     manila::service_instance::connect_share_server_to_tenant_network: true
+  # VIPs
+  ControlFixedIPs:
+  - ip_address: '192.0.2.9'
+  InternalApiVirtualFixedIPs:
+  - ip_address: '172.16.12.9'
+  PublicVirtualFixedIPs:
+  - ip_address: '192.168.253.9'
+  StorageVirtualFixedIPs:
+  - ip_address: '192.168.249.9'
+  StorageMgmtVirtualFixedIPs:
+  - ip_address: '192.168.250.9'
+  RedisVirtualFixedIPs:
+  - ip_address: '172.16.12.8'
   # This section is where deployment-specific configuration is done
   # CIDR subnet mask length for provisioning network
   ControlPlaneSubnetCidr: '24'

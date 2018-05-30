@@ -40,25 +40,41 @@ parameter_defaults:
   ControllerIPs:
     # Each controller will get an IP from the lists below, first controller, first IP
     external:
-    - 10.0.0.251
+    - '192.168.253.10'
+    - '192.168.253.11'
+    - '192.168.253.12'
     internal_api:
-    - 172.16.2.251
+    - '172.16.12.10'
+    - '172.16.12.11'
+    - '172.16.12.12'
     storage:
-    - 172.16.1.251
+    - '192.168.249.10'
+    - '192.168.249.11'
+    - '192.168.249.12'
     storage_mgmt:
-    - 172.16.3.251
+    - '192.168.250.10'
+    - '192.168.250.11'
+    - '192.168.250.12'
     tenant:
-    - 172.16.0.251
+    - '172.16.2.10'
+    - '172.16.2.11'
+    - '172.16.2.12'
     #management:
     #- 172.16.4.251
   ComputeIPs:
     # Each compute will get an IP from the lists below, first compute, first IP
     internal_api:
-    - 172.16.2.252
+    - '172.16.12.20'
+    - '172.16.12.21'
+    - '172.16.12.22'
     storage:
-    - 172.16.1.252
+    - '192.168.249.20'
+    - '192.168.249.21'
+    - '192.168.249.22'
     tenant:
-    - 172.16.0.252
+    - '172.16.2.20'
+    - '172.16.2.21'
+    - '172.16.2.22'
     #management:
     #- 172.16.4.252
   CephStorageIPs:
