@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo yum install -y python-virtualbmc
 vbmc add esjc-ost2-cc01p --address 127.0.0.1 --port 6230 --libvirt-uri qemu+ssh://falfaro@10.2.0.1/system
 vbmc add esjc-ost2-cc02p --address 127.0.0.1 --port 6231 --libvirt-uri qemu+ssh://falfaro@10.2.0.1/system
 vbmc add esjc-ost2-cc03p --address 127.0.0.1 --port 6232 --libvirt-uri qemu+ssh://falfaro@10.2.0.1/system
