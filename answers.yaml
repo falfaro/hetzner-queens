@@ -5,3 +5,4 @@ environments:
 - environments/network-environment.yaml
 - environments/ips-from-pool-all.yaml
 - environments/scheduler-hints.yaml
+- environments/node-info.yaml
