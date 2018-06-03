@@ -1,0 +1,16 @@
+## Ceph configuration
+
+parameter_defaults:
+  # OSDs configuration
+  # See https://github.com/ceph/ceph-ansible/blob/stable-3.0/docs/source/osds/scenarios.rst
+  CephAnsibleDisksConfig:
+    osd_scenario: non-collocated
+    devices:
+    - /dev/vdb
+    dedicated_devices:
+    - /dev/vdc
+  CephAnsibleExtraConfig:
+    ceph_osd_docker_memory_limit: 3g
+    ceph_osd_docker_cpu_limit: 1
+  CephPoolDefaultSize: 3
+  CephPoolDefaultPgNum: 16

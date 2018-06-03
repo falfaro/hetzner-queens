@@ -1,8 +1,10 @@
 parameter_defaults:
-  OvercloudControlFlavor: control
+  OvercloudControllerFlavor: control
   OvercloudComputeFlavor: compute
+  OvercloudComputeHCIFlavor: osdcompute
   ControllerCount: 3
-  ComputeCount: 3
+  ComputeCount: 0
+  ComputeHCICount: 3
 
   # Default timezone
   TimeZone: 'Europe/Madrid'

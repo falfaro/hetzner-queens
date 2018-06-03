@@ -106,6 +106,7 @@ class Nodes(object):
     'control': 'controller',
     'networker': 'networker',
     'compute': 'compute',
+    'osdcompute': 'osdcompute',
     'ceph-storage': 'cephstorage',
     'swift-storage': 'swiftstorage',
   } 
@@ -178,6 +179,18 @@ class ComputeNodes(Nodes):
       root_device=root_device, **kwargs)
 
 
+class ComputeHCINodes(Nodes):
+  """ComputeHCI nodes."""
+
+  @classmethod
+  def add(cls, node_class, ip, mac,
+          cpus=24, memory_mb=256*1024, local_gb=1024, root_device=None, **kwargs):
+    super(cls, ComputeHCINodes).add(
+      node_class, 'cn0', 'osdcompute',
+      ip=ip, mac=mac, cpus=cpus, memory_mb=memory_mb, local_gb=local_gb,
+      root_device=root_device, **kwargs)
+
+
 class CephNodes(Nodes):
   """Ceph nodes."""
 
@@ -207,15 +220,15 @@ ControlNodes.add(IpmiNode, '127.0.0.1', '52:54:00:4b:68:8e', port=6230) # ESJC-O
 ControlNodes.add(IpmiNode, '127.0.0.1', '52:54:00:11:c9:b5', port=6231) # ESJC-OST2-CC02P
 ControlNodes.add(IpmiNode, '127.0.0.1', '52:54:00:8b:16:c6', port=6232) # ESJC-OST2-CC03P
 
-# Networker nodes
+## Networker nodes
 NetworkerNodes.add(IpmiNode, '127.0.0.1', '52:54:00:7d:53:46', port=6233) # ESJC-OST2-NN01P
 NetworkerNodes.add(IpmiNode, '127.0.0.1', '52:54:00:03:32:ef', port=6234) # ESJC-OST2-NN02P
 NetworkerNodes.add(IpmiNode, '127.0.0.1', '52:54:00:5d:89:7e', port=6235) # ESJC-OST2-NN03P
 
 # Compute nodes
-ComputeNodes.add(IpmiNode, '127.0.0.1', '52:54:00:b3:06:0d', port=6236) # ESJC-OST2-CN01P
-ComputeNodes.add(IpmiNode, '127.0.0.1', '52:54:00:e9:b7:5e', port=6237) # ESJC-OST2-CN02P
-ComputeNodes.add(IpmiNode, '127.0.0.1', '52:54:00:88:9a:22', port=6238) # ESJC-OST2-CN03P
+ComputeHCINodes.add(IpmiNode, '127.0.0.1', '52:54:00:b3:06:0d', port=6236) # ESJC-OST2-CN01P
+ComputeHCINodes.add(IpmiNode, '127.0.0.1', '52:54:00:e9:b7:5e', port=6237) # ESJC-OST2-CN02P
+ComputeHCINodes.add(IpmiNode, '127.0.0.1', '52:54:00:88:9a:22', port=6238) # ESJC-OST2-CN03P
 
 ## Swift nodes
 #SwiftNodes.add(KvmNode, '10.2.0.1', '52:54:00:5a:ef:44') # ESJC-OST2-SN51P

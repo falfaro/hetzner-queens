@@ -50,55 +50,7 @@
     }, 
     {
       "arch": "x86_64", 
-      "capabilities": "node:networker-0,profile:networker,boot_option:local", 
-      "cpu": "12", 
-      "disk": "1024", 
-      "mac": [
-        "52:54:00:7d:53:46"
-      ], 
-      "memory": "98304", 
-      "name": "esjc-ost2-nn01p", 
-      "pm_addr": "127.0.0.1", 
-      "pm_password": "password", 
-      "pm_port": "6233", 
-      "pm_type": "pxe_ipmitool", 
-      "pm_user": "admin"
-    }, 
-    {
-      "arch": "x86_64", 
-      "capabilities": "node:networker-1,profile:networker,boot_option:local", 
-      "cpu": "12", 
-      "disk": "1024", 
-      "mac": [
-        "52:54:00:03:32:ef"
-      ], 
-      "memory": "98304", 
-      "name": "esjc-ost2-nn02p", 
-      "pm_addr": "127.0.0.1", 
-      "pm_password": "password", 
-      "pm_port": "6234", 
-      "pm_type": "pxe_ipmitool", 
-      "pm_user": "admin"
-    }, 
-    {
-      "arch": "x86_64", 
-      "capabilities": "node:networker-2,profile:networker,boot_option:local", 
-      "cpu": "12", 
-      "disk": "1024", 
-      "mac": [
-        "52:54:00:5d:89:7e"
-      ], 
-      "memory": "98304", 
-      "name": "esjc-ost2-nn03p", 
-      "pm_addr": "127.0.0.1", 
-      "pm_password": "password", 
-      "pm_port": "6235", 
-      "pm_type": "pxe_ipmitool", 
-      "pm_user": "admin"
-    }, 
-    {
-      "arch": "x86_64", 
-      "capabilities": "node:compute-0,profile:compute,boot_option:local", 
+      "capabilities": "node:osdcompute-0,profile:osdcompute,boot_option:local", 
       "cpu": "24", 
       "disk": "1024", 
       "mac": [
@@ -114,7 +66,7 @@
     }, 
     {
       "arch": "x86_64", 
-      "capabilities": "node:compute-1,profile:compute,boot_option:local", 
+      "capabilities": "node:osdcompute-1,profile:osdcompute,boot_option:local", 
       "cpu": "24", 
       "disk": "1024", 
       "mac": [
@@ -130,7 +82,7 @@
     }, 
     {
       "arch": "x86_64", 
-      "capabilities": "node:compute-2,profile:compute,boot_option:local", 
+      "capabilities": "node:osdcompute-2,profile:osdcompute,boot_option:local", 
       "cpu": "24", 
       "disk": "1024", 
       "mac": [

@@ -15,6 +15,13 @@ resource_registry:
   OS::TripleO::Compute::Ports::TenantPort: ../network/ports/tenant_from_pool.yaml
   #OS::TripleO::Compute::Ports::ManagementPort: ../network/ports/management_from_pool.yaml
 
+  OS::TripleO::ComputeHCI::Ports::ExternalPort: ../network/ports/noop.yaml
+  OS::TripleO::ComputeHCI::Ports::InternalApiPort: ../network/ports/internal_api_from_pool.yaml
+  OS::TripleO::ComputeHCI::Ports::StoragePort: ../network/ports/storage_from_pool.yaml
+  OS::TripleO::ComputeHCI::Ports::StorageMgmtPort: ../network/ports/storage_mgmt_from_pool.yaml
+  OS::TripleO::ComputeHCI::Ports::TenantPort: ../network/ports/tenant_from_pool.yaml
+  #OS::TripleO::ComputeHCI::Ports::ManagementPort: ../network/ports/management_from_pool.yaml
+
   OS::TripleO::CephStorage::Ports::ExternalPort: ../network/ports/noop.yaml
   OS::TripleO::CephStorage::Ports::InternalApiPort: ../network/ports/noop.yaml
   OS::TripleO::CephStorage::Ports::StoragePort: ../network/ports/storage_from_pool.yaml
@@ -77,6 +84,26 @@ parameter_defaults:
     - '172.16.2.22'
     #management:
     #- 172.16.4.252
+  ComputeHCIIPs:
+    # Each compute will get an IP from the lists below, first compute, first IP
+    internal_api:
+    - '172.16.12.20'
+    - '172.16.12.21'
+    - '172.16.12.22'
+    storage:
+    - '192.168.249.20'
+    - '192.168.249.21'
+    - '192.168.249.22'
+    storage_mgmt:
+    - '192.168.250.20'
+    - '192.168.250.21'
+    - '192.168.250.22'
+    tenant:
+    - '172.16.2.20'
+    - '172.16.2.21'
+    - '172.16.2.22'
+    #management:
+    #- 172.16.4.252
   CephStorageIPs:
     # Each ceph node will get an IP from the lists below, first node, first IP
     storage:
@@ -85,7 +112,7 @@ parameter_defaults:
     - 172.16.3.253
     #management:
     #- 172.16.4.253
-  SwiftStorageIPs:
+  ObjectStorageIPs:
     # Each swift node will get an IP from the lists below, first node, first IP
     internal_api:
     - 172.16.2.254
